@@ -1,5 +1,5 @@
 ---
-
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="es">
@@ -18,10 +18,16 @@
             <div class="vw">60vw</div>
             <div class="svw">60svw</div>
             <div class="lvw">60lvw</div>
+            <Footer />
         </div>
     </body>
 </html>
 <style is:global>
+    @import url('https://fonts.googleapis.com/css2?family=Georama:wght@400;500;600;700;800;900&display=swap');
+    body {
+        font-family: "Georama";
+    }
+
     .container {
         padding: 2rem;
         width: 100%;
