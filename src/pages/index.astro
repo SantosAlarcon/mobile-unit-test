@@ -1,0 +1,66 @@
+---
+
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Astro</h1>
+            <div class="percent">60%</div>
+            <div class="ch">60ch</div>
+            <div class="vw">60vw</div>
+            <div class="svw">60svw</div>
+            <div class="lvw">60lvw</div>
+        </div>
+    </body>
+</html>
+<style is:global>
+    .container {
+        padding: 2rem;
+        width: 100%;
+    }
+    .percent,
+    .vw,
+    .svw,
+    .lvw,
+    .ch {
+        margin: 1em 0;
+        border-radius: 1em;
+        padding: 1em;
+        background-color: #a00;
+    }
+    .percent {
+        width: 60%;
+    }
+    .vw {
+        width: 60vw;
+    }
+    .svw {
+        width: 60svw;
+    }
+    .lvw {
+        width: 60lvw;
+    }
+    .ch {
+        width: 60ch;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #112;
+            color: white;
+        }
+    }
+</style>
