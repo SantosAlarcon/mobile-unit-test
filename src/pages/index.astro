@@ -14,8 +14,8 @@ import Footer from "../components/Footer.astro";
         <div class="container">
             <h1>Astro</h1>
             <div class="percent">60%</div>
-            <div class="ch">60ch</div>
             <div class="vw">60vw</div>
+            <div class="dvw">60dvw</div>
             <div class="svw">60svw</div>
             <div class="lvw">60lvw</div>
         </div>
@@ -23,7 +23,11 @@ import Footer from "../components/Footer.astro";
     </body>
 </html>
 <style is:global>
-    @import url("https://fonts.googleapis.com/css2?family=Georama:wght@400;500;600;700;800;900&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Georama:wght@400;500;600;700;800;900&display=swap');
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
     body {
         font-family: "Georama";
         margin: 0;
@@ -36,9 +40,9 @@ import Footer from "../components/Footer.astro";
     }
     .percent,
     .vw,
+    .dvw,
     .svw,
-    .lvw,
-    .ch {
+    .lvw {
         margin: 1em 0;
         border-radius: 1em;
         padding: 1em;
@@ -50,14 +54,14 @@ import Footer from "../components/Footer.astro";
     .vw {
         width: 60vw;
     }
+    .dvw {
+        width: 60dvw;
+    }
     .svw {
         width: 60svw;
     }
     .lvw {
         width: 60lvw;
-    }
-    .ch {
-        width: 60ch;
     }
 
     h1,
